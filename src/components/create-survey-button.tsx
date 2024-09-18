@@ -7,8 +7,10 @@ export const CreateSurveyButton = ({ user, isLoggedIn, learnMode = true, size = 
     const [loading, setLoading] = useState(false);
 
     const handleConfirm = async () => {
+        setError("")
         setLoading(true)
         console.log("Do something")
+        console.log(user)
         setLoading(false)
     };
 

@@ -1,4 +1,3 @@
-import { auth } from "@/auth"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Users, Send } from "lucide-react"

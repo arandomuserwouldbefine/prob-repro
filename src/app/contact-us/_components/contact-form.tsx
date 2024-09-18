@@ -25,8 +25,14 @@ export const ContactForm = () => {
     });
 
     const onSubmit = async (data: z.infer<typeof ContactFormSchema>) => {
-        console.log("Submit the form")
+        startTransition(() => {
+            console.log("Submit the form")
+            console.log(data);
+            setSuccess("")
+            setError("")
+            reset()
 
+        })
     };
 
     return (
